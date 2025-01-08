@@ -1,7 +1,0 @@
-INFO - 2025-01-06 20:03:57,160 - console activated - Fluxon.Endpoint
-INFO - 2025-01-06 20:03:57,175 - [Fluxon] server running on 192.168.1.6:8080 - Fluxon.Endpoint
-INFO - 2025-01-06 20:03:57,175 - [CloudStorage] cloud storage running on 192.168.1.6:8888 - Fluxon.Endpoint
-ERROR - 2025-01-06 20:04:03,789 - Error while closing the connection: [WinError 64] The specified network name is no longer available - Fluxon.Endpoint
-WARNING - 2025-01-06 20:04:05,545 - Failed to read content length from ('192.168.1.6', 64057) - Fluxon.Endpoint
-INFO - 2025-01-06 20:04:05,545 - Connection closed by ('192.168.1.6', 64057) - Fluxon.Endpoint
-WARNING - 2025-01-06 20:05:05,556 - Timeout after 60 seconds while reading from ('192.168.1.6', 64056) - Fluxon.Endpoint

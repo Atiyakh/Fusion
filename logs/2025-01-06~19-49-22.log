@@ -1,5 +1,0 @@
-INFO - 2025-01-06 19:49:22,539 - console activated - Fluxon.Endpoint
-INFO - 2025-01-06 19:49:22,565 - [CloudStorage] cloud storage running on 192.168.1.6:8888 - Fluxon.Endpoint
-INFO - 2025-01-06 19:49:22,565 - [Fluxon] server running on 192.168.1.6:8080 - Fluxon.Endpoint
-ERROR - 2025-01-06 19:49:37,941 - Error while closing the connection: [WinError 64] The specified network name is no longer available - Fluxon.Endpoint
-ERROR - 2025-01-06 19:49:40,458 - Error while handling request from ('192.168.1.6', 63697): 'AsyncConnection' object has no attribute 'server_private_key' - Fluxon.Endpoint

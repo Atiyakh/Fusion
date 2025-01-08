@@ -1,7 +1,0 @@
-INFO - 2025-01-06 21:45:25,594 - console activated - Fluxon.Endpoint
-INFO - 2025-01-06 21:45:25,604 - [Fluxon] server running on 192.168.1.6:8080 - Fluxon.Endpoint
-INFO - 2025-01-06 21:45:25,604 - [CloudStorage] cloud storage running on 192.168.1.6:8888 - Fluxon.Endpoint
-WARNING - 2025-01-06 21:45:28,661 - Failed to read content length from ('192.168.1.6', 49972) - Fluxon.Endpoint
-INFO - 2025-01-06 21:45:28,661 - Connection closed by ('192.168.1.6', 49972) - Fluxon.Endpoint
-WARNING - 2025-01-06 21:45:28,661 - Failed to read content length from ('192.168.1.6', 49973) - Fluxon.Endpoint
-INFO - 2025-01-06 21:45:28,661 - Connection closed by ('192.168.1.6', 49973) - Fluxon.Endpoint
