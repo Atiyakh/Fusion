@@ -1,3 +1,3 @@
 # Fusion
 AI Training Data Management &amp; Development Platform
-Still under development
+(Still under development)
