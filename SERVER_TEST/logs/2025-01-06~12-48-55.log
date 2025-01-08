@@ -1,0 +1,4 @@
+INFO - 2025-01-06 12:48:55,426 - console activated - Fluxon.Endpoint
+INFO - 2025-01-06 12:48:55,433 - [Fluxon] server running on 192.168.1.6:8080 - Fluxon.Endpoint
+ERROR - 2025-01-06 12:48:59,352 - Error while closing the connection: [WinError 64] The specified network name is no longer available - Fluxon.Endpoint
+ERROR - 2025-01-06 12:49:07,620 - Error while handling request from ('192.168.1.6', 60355): cannot pickle 'coroutine' object - Fluxon.Endpoint

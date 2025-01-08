@@ -1,0 +1,44 @@
+INFO - 2025-01-06 12:57:45,138 - console activated - Fluxon.Endpoint
+INFO - 2025-01-06 12:57:45,139 - [Fluxon] server running on 192.168.1.6:8080 - Fluxon.Endpoint
+ERROR - 2025-01-06 12:57:56,356 - Error while closing the connection: [WinError 64] The specified network name is no longer available - Fluxon.Endpoint
+WARNING - 2025-01-06 12:58:01,902 - Failed to read content length from ('192.168.1.6', 60619) - Fluxon.Endpoint
+INFO - 2025-01-06 12:58:01,902 - Connection closed by ('192.168.1.6', 60619) - Fluxon.Endpoint
+WARNING - 2025-01-06 12:58:22,610 - Failed to read content length from ('192.168.1.6', 60622) - Fluxon.Endpoint
+INFO - 2025-01-06 12:58:22,611 - Connection closed by ('192.168.1.6', 60622) - Fluxon.Endpoint
+WARNING - 2025-01-06 12:58:23,195 - Failed to read content length from ('192.168.1.6', 60623) - Fluxon.Endpoint
+INFO - 2025-01-06 12:58:23,196 - Connection closed by ('192.168.1.6', 60623) - Fluxon.Endpoint
+WARNING - 2025-01-06 12:58:23,334 - Failed to read content length from ('192.168.1.6', 60624) - Fluxon.Endpoint
+INFO - 2025-01-06 12:58:23,334 - Connection closed by ('192.168.1.6', 60624) - Fluxon.Endpoint
+WARNING - 2025-01-06 12:58:23,453 - Failed to read content length from ('192.168.1.6', 60625) - Fluxon.Endpoint
+INFO - 2025-01-06 12:58:23,454 - Connection closed by ('192.168.1.6', 60625) - Fluxon.Endpoint
+WARNING - 2025-01-06 12:58:23,579 - Failed to read content length from ('192.168.1.6', 60627) - Fluxon.Endpoint
+INFO - 2025-01-06 12:58:23,580 - Connection closed by ('192.168.1.6', 60627) - Fluxon.Endpoint
+WARNING - 2025-01-06 12:58:23,674 - Failed to read content length from ('192.168.1.6', 60628) - Fluxon.Endpoint
+INFO - 2025-01-06 12:58:23,674 - Connection closed by ('192.168.1.6', 60628) - Fluxon.Endpoint
+WARNING - 2025-01-06 12:58:23,819 - Failed to read content length from ('192.168.1.6', 60629) - Fluxon.Endpoint
+INFO - 2025-01-06 12:58:23,820 - Connection closed by ('192.168.1.6', 60629) - Fluxon.Endpoint
+WARNING - 2025-01-06 12:58:23,903 - Failed to read content length from ('192.168.1.6', 60630) - Fluxon.Endpoint
+INFO - 2025-01-06 12:58:23,904 - Connection closed by ('192.168.1.6', 60630) - Fluxon.Endpoint
+WARNING - 2025-01-06 12:58:23,998 - Failed to read content length from ('192.168.1.6', 60631) - Fluxon.Endpoint
+INFO - 2025-01-06 12:58:23,999 - Connection closed by ('192.168.1.6', 60631) - Fluxon.Endpoint
+WARNING - 2025-01-06 12:58:24,109 - Failed to read content length from ('192.168.1.6', 60632) - Fluxon.Endpoint
+INFO - 2025-01-06 12:58:24,110 - Connection closed by ('192.168.1.6', 60632) - Fluxon.Endpoint
+WARNING - 2025-01-06 12:58:24,206 - Failed to read content length from ('192.168.1.6', 60633) - Fluxon.Endpoint
+INFO - 2025-01-06 12:58:24,206 - Connection closed by ('192.168.1.6', 60633) - Fluxon.Endpoint
+WARNING - 2025-01-06 12:58:24,308 - Failed to read content length from ('192.168.1.6', 60634) - Fluxon.Endpoint
+INFO - 2025-01-06 12:58:24,308 - Connection closed by ('192.168.1.6', 60634) - Fluxon.Endpoint
+WARNING - 2025-01-06 12:58:24,414 - Failed to read content length from ('192.168.1.6', 60635) - Fluxon.Endpoint
+INFO - 2025-01-06 12:58:24,414 - Connection closed by ('192.168.1.6', 60635) - Fluxon.Endpoint
+WARNING - 2025-01-06 12:58:24,512 - Failed to read content length from ('192.168.1.6', 60636) - Fluxon.Endpoint
+INFO - 2025-01-06 12:58:24,512 - Connection closed by ('192.168.1.6', 60636) - Fluxon.Endpoint
+WARNING - 2025-01-06 12:58:25,375 - Failed to read content length from ('192.168.1.6', 60637) - Fluxon.Endpoint
+INFO - 2025-01-06 12:58:25,376 - Connection closed by ('192.168.1.6', 60637) - Fluxon.Endpoint
+WARNING - 2025-01-06 12:58:25,505 - Failed to read content length from ('192.168.1.6', 60638) - Fluxon.Endpoint
+INFO - 2025-01-06 12:58:25,505 - Connection closed by ('192.168.1.6', 60638) - Fluxon.Endpoint
+WARNING - 2025-01-06 12:58:25,618 - Failed to read content length from ('192.168.1.6', 60639) - Fluxon.Endpoint
+INFO - 2025-01-06 12:58:25,618 - Connection closed by ('192.168.1.6', 60639) - Fluxon.Endpoint
+WARNING - 2025-01-06 12:58:25,724 - Failed to read content length from ('192.168.1.6', 60640) - Fluxon.Endpoint
+INFO - 2025-01-06 12:58:25,724 - Connection closed by ('192.168.1.6', 60640) - Fluxon.Endpoint
+WARNING - 2025-01-06 12:58:25,826 - Failed to read content length from ('192.168.1.6', 60641) - Fluxon.Endpoint
+INFO - 2025-01-06 12:58:25,827 - Connection closed by ('192.168.1.6', 60641) - Fluxon.Endpoint
+WARNING - 2025-01-06 12:58:57,606 - Timeout after 60 seconds while reading from ('192.168.1.6', 60616) - Fluxon.Endpoint

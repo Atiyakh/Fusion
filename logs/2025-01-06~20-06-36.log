@@ -1,0 +1,5 @@
+INFO - 2025-01-06 20:06:36,307 - console activated - Fluxon.Endpoint
+INFO - 2025-01-06 20:06:36,317 - [Fluxon] server running on 192.168.1.6:8080 - Fluxon.Endpoint
+INFO - 2025-01-06 20:06:36,317 - [CloudStorage] cloud storage running on 192.168.1.6:8888 - Fluxon.Endpoint
+ERROR - 2025-01-06 20:06:42,344 - Error while closing the connection: [WinError 64] The specified network name is no longer available - Fluxon.Endpoint
+ERROR - 2025-01-06 20:06:46,129 - Error while handling request from ('192.168.1.6', 64107): 'AsyncTable' object has no attribute 'Chech' - Fluxon.Endpoint

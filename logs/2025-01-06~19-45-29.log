@@ -1,0 +1,4 @@
+INFO - 2025-01-06 19:45:29,223 - console activated - Fluxon.Endpoint
+INFO - 2025-01-06 19:45:29,247 - [Fluxon] server running on 192.168.1.6:8080 - Fluxon.Endpoint
+INFO - 2025-01-06 19:45:29,247 - [CloudStorage] cloud storage running on 192.168.1.6:8888 - Fluxon.Endpoint
+ERROR - 2025-01-06 19:45:36,772 - Error while handling request from ('192.168.1.6', 63616): 'Request' object has no attribute 'private_key' - Fluxon.Endpoint
