@@ -1,0 +1,4 @@
+INFO - 2025-01-05 00:53:01,688 - console activated - Fluxon.Endpoint
+INFO - 2025-01-05 00:53:01,718 - [Fluxon] server running on 192.168.56.1:8080 - Fluxon.Endpoint
+ERROR - 2025-01-05 00:53:15,391 - Error while closing the connection: [WinError 64] The specified network name is no longer available - Fluxon.Endpoint
+ERROR - 2025-01-05 00:53:30,140 - Error while closing the connection: [WinError 64] The specified network name is no longer available - Fluxon.Endpoint

@@ -1,0 +1,7 @@
+INFO - 2025-01-06 19:40:46,704 - console activated - Fluxon.Endpoint
+INFO - 2025-01-06 19:40:46,732 - [Fluxon] server running on 192.168.1.6:8080 - Fluxon.Endpoint
+INFO - 2025-01-06 19:40:46,732 - [CloudStorage] cloud storage running on 192.168.1.6:8888 - Fluxon.Endpoint
+ERROR - 2025-01-06 19:40:52,629 - Error while closing the connection: [WinError 64] The specified network name is no longer available - Fluxon.Endpoint
+ERROR - 2025-01-06 19:40:54,988 - Error while handling request from ('192.168.1.6', 63513): 'Request' object has no attribute 'private_key' - Fluxon.Endpoint
+ERROR - 2025-01-06 19:41:11,747 - Error while closing the connection: [WinError 64] The specified network name is no longer available - Fluxon.Endpoint
+ERROR - 2025-01-06 19:41:14,009 - Error while handling request from ('192.168.1.6', 63516): 'Request' object has no attribute 'private_key' - Fluxon.Endpoint

@@ -1,0 +1,31 @@
+INFO - 2025-01-08 07:25:42,596 - console activated - Fluxon.Endpoint
+INFO - 2025-01-08 07:25:42,596 - [Fluxon] server running on 192.168.1.6:8080 - Fluxon.Endpoint
+WARNING - 2025-01-08 07:25:56,751 - Failed to read content length from ('192.168.1.6', 56503) - Fluxon.Endpoint
+INFO - 2025-01-08 07:25:56,752 - Connection closed by ('192.168.1.6', 56503) - Fluxon.Endpoint
+WARNING - 2025-01-08 07:26:47,437 - Timeout after 60 seconds while reading from ('192.168.1.6', 56501) - Fluxon.Endpoint
+WARNING - 2025-01-08 07:27:47,440 - Timeout after 60 seconds while reading from ('192.168.1.6', 56501) - Fluxon.Endpoint
+WARNING - 2025-01-08 07:28:47,442 - Timeout after 60 seconds while reading from ('192.168.1.6', 56501) - Fluxon.Endpoint
+WARNING - 2025-01-08 07:29:47,457 - Timeout after 60 seconds while reading from ('192.168.1.6', 56501) - Fluxon.Endpoint
+WARNING - 2025-01-08 07:30:47,466 - Timeout after 60 seconds while reading from ('192.168.1.6', 56501) - Fluxon.Endpoint
+WARNING - 2025-01-08 07:31:47,477 - Timeout after 60 seconds while reading from ('192.168.1.6', 56501) - Fluxon.Endpoint
+WARNING - 2025-01-08 07:32:47,480 - Timeout after 60 seconds while reading from ('192.168.1.6', 56501) - Fluxon.Endpoint
+WARNING - 2025-01-08 07:33:47,495 - Timeout after 60 seconds while reading from ('192.168.1.6', 56501) - Fluxon.Endpoint
+WARNING - 2025-01-08 07:34:47,503 - Timeout after 60 seconds while reading from ('192.168.1.6', 56501) - Fluxon.Endpoint
+WARNING - 2025-01-08 07:35:47,514 - Timeout after 60 seconds while reading from ('192.168.1.6', 56501) - Fluxon.Endpoint
+WARNING - 2025-01-08 07:36:47,527 - Timeout after 60 seconds while reading from ('192.168.1.6', 56501) - Fluxon.Endpoint
+WARNING - 2025-01-08 07:37:47,540 - Timeout after 60 seconds while reading from ('192.168.1.6', 56501) - Fluxon.Endpoint
+WARNING - 2025-01-08 07:38:47,544 - Timeout after 60 seconds while reading from ('192.168.1.6', 56501) - Fluxon.Endpoint
+WARNING - 2025-01-08 07:39:47,549 - Timeout after 60 seconds while reading from ('192.168.1.6', 56501) - Fluxon.Endpoint
+WARNING - 2025-01-08 07:40:47,559 - Timeout after 60 seconds while reading from ('192.168.1.6', 56501) - Fluxon.Endpoint
+WARNING - 2025-01-08 07:41:47,569 - Timeout after 60 seconds while reading from ('192.168.1.6', 56501) - Fluxon.Endpoint
+WARNING - 2025-01-08 07:42:47,575 - Timeout after 60 seconds while reading from ('192.168.1.6', 56501) - Fluxon.Endpoint
+WARNING - 2025-01-08 07:43:47,591 - Timeout after 60 seconds while reading from ('192.168.1.6', 56501) - Fluxon.Endpoint
+WARNING - 2025-01-08 07:44:47,599 - Timeout after 60 seconds while reading from ('192.168.1.6', 56501) - Fluxon.Endpoint
+WARNING - 2025-01-08 07:45:47,609 - Timeout after 60 seconds while reading from ('192.168.1.6', 56501) - Fluxon.Endpoint
+WARNING - 2025-01-08 07:46:47,612 - Timeout after 60 seconds while reading from ('192.168.1.6', 56501) - Fluxon.Endpoint
+WARNING - 2025-01-08 07:47:47,616 - Timeout after 60 seconds while reading from ('192.168.1.6', 56501) - Fluxon.Endpoint
+WARNING - 2025-01-08 07:48:47,620 - Timeout after 60 seconds while reading from ('192.168.1.6', 56501) - Fluxon.Endpoint
+WARNING - 2025-01-08 07:49:47,629 - Timeout after 60 seconds while reading from ('192.168.1.6', 56501) - Fluxon.Endpoint
+WARNING - 2025-01-08 07:50:47,631 - Timeout after 60 seconds while reading from ('192.168.1.6', 56501) - Fluxon.Endpoint
+WARNING - 2025-01-08 07:51:47,644 - Timeout after 60 seconds while reading from ('192.168.1.6', 56501) - Fluxon.Endpoint
+ERROR - 2025-01-08 07:52:42,614 - Error while closing the connection: [WinError 64] The specified network name is no longer available - Fluxon.Endpoint

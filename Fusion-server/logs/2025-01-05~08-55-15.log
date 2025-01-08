@@ -1,0 +1,9 @@
+INFO - 2025-01-05 08:55:15,893 - console activated - Fluxon.Endpoint
+INFO - 2025-01-05 08:55:15,900 - [Fluxon] server running on 192.168.1.6:8080 - Fluxon.Endpoint
+WARNING - 2025-01-05 08:55:23,087 - Failed to read content length from ('192.168.1.6', 65528) - Fluxon.Endpoint
+INFO - 2025-01-05 08:55:23,087 - Connection closed by ('192.168.1.6', 65528) - Fluxon.Endpoint
+ERROR - 2025-01-05 08:55:47,882 - Error while closing the connection: [WinError 64] The specified network name is no longer available - Fluxon.Endpoint
+WARNING - 2025-01-05 09:05:47,172 - Failed to read content length from ('192.168.1.6', 49332) - Fluxon.Endpoint
+INFO - 2025-01-05 09:05:47,174 - Connection closed by ('192.168.1.6', 49332) - Fluxon.Endpoint
+ERROR - 2025-01-05 09:05:53,660 - Error while closing the connection: [WinError 64] The specified network name is no longer available - Fluxon.Endpoint
+ERROR - 2025-01-05 10:09:31,426 - Error while closing the connection: [WinError 64] The specified network name is no longer available - Fluxon.Endpoint

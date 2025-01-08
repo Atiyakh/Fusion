@@ -1,0 +1,20 @@
+INFO - 2025-01-05 01:29:47,081 - console activated - Fluxon.Endpoint
+INFO - 2025-01-05 01:29:47,105 - [Fluxon] server running on 192.168.56.1:8080 - Fluxon.Endpoint
+WARNING - 2025-01-05 01:30:02,414 - Failed to read content length from ('192.168.56.1', 10218) - Fluxon.Endpoint
+INFO - 2025-01-05 01:30:02,416 - Connection closed by ('192.168.56.1', 10218) - Fluxon.Endpoint
+WARNING - 2025-01-05 01:30:08,063 - Failed to read content length from ('192.168.56.1', 10222) - Fluxon.Endpoint
+INFO - 2025-01-05 01:30:08,063 - Connection closed by ('192.168.56.1', 10222) - Fluxon.Endpoint
+WARNING - 2025-01-05 01:30:16,224 - Failed to read content length from ('192.168.56.1', 10225) - Fluxon.Endpoint
+INFO - 2025-01-05 01:30:16,225 - Connection closed by ('192.168.56.1', 10225) - Fluxon.Endpoint
+WARNING - 2025-01-05 01:30:53,591 - Failed to read content length from ('192.168.56.1', 10230) - Fluxon.Endpoint
+INFO - 2025-01-05 01:30:53,596 - Connection closed by ('192.168.56.1', 10230) - Fluxon.Endpoint
+WARNING - 2025-01-05 01:30:55,685 - Timeout after 60 seconds while reading from ('192.168.56.1', 10217) - Fluxon.Endpoint
+ERROR - 2025-01-05 01:31:01,482 - Error while closing the connection: [WinError 64] The specified network name is no longer available - Fluxon.Endpoint
+WARNING - 2025-01-05 01:32:00,578 - Failed to read content length from ('192.168.56.1', 10250) - Fluxon.Endpoint
+INFO - 2025-01-05 01:32:00,580 - Connection closed by ('192.168.56.1', 10250) - Fluxon.Endpoint
+WARNING - 2025-01-05 01:32:30,204 - Failed to read content length from ('192.168.56.1', 10252) - Fluxon.Endpoint
+INFO - 2025-01-05 01:32:30,204 - Connection closed by ('192.168.56.1', 10252) - Fluxon.Endpoint
+ERROR - 2025-01-05 01:32:46,693 - Error while closing the connection: [WinError 64] The specified network name is no longer available - Fluxon.Endpoint
+WARNING - 2025-01-05 01:42:04,479 - Failed to read content length from ('192.168.56.1', 10398) - Fluxon.Endpoint
+INFO - 2025-01-05 01:42:04,480 - Connection closed by ('192.168.56.1', 10398) - Fluxon.Endpoint
+INFO - 2025-01-05 01:42:18,761 - server terminated... - Fluxon.Endpoint
