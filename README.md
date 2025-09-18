@@ -185,7 +185,3 @@ __pycache__/
 *.pyc
 .DS_Store
 ```
-
----
-
-With these files in place, running the commands in the README will work without errors.
