@@ -7,7 +7,7 @@ This document contains a ready-to-copy repository skeleton (with actual working 
 ---
 
 <div style="text-align: center;">
-  <img src="https://raw.githubusercontent.com/Atiyakh/Fusion/refs/heads/main/fusion_labtools/Screenshot%202025-09-18%20072429.png" alt="centered image" width=100vh/>
+  <img src="https://raw.githubusercontent.com/Atiyakh/Fusion/refs/heads/main/fusion_labtools/Screenshot%202025-09-18%20072429.png" alt="centered image" width=100%/>
 </div>
 ---
 
