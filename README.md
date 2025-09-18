@@ -1,4 +1,4 @@
-# Project Underactive Development:
+# ⚠️ Project Under Active Development!
 
 # Fusion - Python CLI + DevOps + Notebooks — Repository Skeleton
 
