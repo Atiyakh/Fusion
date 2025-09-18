@@ -1,3 +1,5 @@
+# Project Underactive Development:
+
 # Fusion - Python CLI + DevOps + Notebooks — Repository Skeleton
 
 This document contains a ready-to-copy repository skeleton (with actual working code) for a Python CLI application, DevOps automation, and Jupyter/IPython notebook versioning. The files below are consistent with the README quick start instructions.
