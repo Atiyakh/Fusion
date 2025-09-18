@@ -6,23 +6,9 @@ This document contains a ready-to-copy repository skeleton (with actual working 
 
 ---
 
-## Included files (high-level)
-
-* `README.md` — quick start and push instructions
-* `.gitignore` — standard Python ignores
-* `pyproject.toml` — project metadata and build config
-* `requirements.txt` — runtime deps
-* `src/cli_app/__init__.py`
-* `src/cli_app/cli.py` — Click-based CLI entrypoint (dummy commands)
-* `tests/test_cli.py` — basic pytest test
-* `notebooks/example_py.ipynb` — example notebook (paired via jupytext in `notebooks/example_py.py`)
-* `notebooks/example_py.py` — jupytext-friendly plain script version of the notebook
-* `Dockerfile`
-* `.github/workflows/ci.yml`
-* `.pre-commit-config.yaml`
-* `Makefile`
-* `scripts/git_push.sh`
-
+<div style="text-align: center;">
+  <img src="https://raw.githubusercontent.com/Atiyakh/Fusion/refs/heads/main/fusion_labtools/Screenshot%202025-09-18%20072429.png" alt="centered image" width="400"/>
+</div>
 ---
 
 ## File contents
