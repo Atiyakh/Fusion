@@ -1,0 +1,143 @@
+/* src/components/ProjectFileTree/ProjectFileTree.module.css */
+.projectFileTreeWrapper {
+  /* tweak these to taste */
+  --tree-indent: 10px;       /* horizontal space per level */
+  --tree-icon-size: 16px;
+  --tree-line-offset: 14px;
+  --tree-gap: 6px;
+  --tree-line: #d9e3ea;      /* vertical line color */
+
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  font-size: 13px;
+  color: rgb(102, 102, 102);
+  max-width: 300px;
+  min-width: 300px;
+  border-right: 1px solid var(--border);
+  background: var(--bg-2nd-tone);
+}
+
+.projectFileTreeScroller::-webkit-scrollbar {
+  width: 10px;
+}
+
+.projectFileTreeScroller::-webkit-scrollbar-track {
+  background: #f1f1f150;
+  border-left: 1px solid var(--border);
+}
+
+.projectFileTreeScroller::-webkit-scrollbar-thumb {
+  background: #8885;
+  transition: background 180ms cubic-bezier(.25, .1, .25, 1);
+}
+
+.projectFileTreeScroller::-webkit-scrollbar-thumb:hover {
+  background: #8887;
+}
+
+.projectFileTreeScroller::-webkit-scrollbar-thumb:active {
+  background: #5559;
+}
+
+/* root list (no vertical gutter on the root itself) */
+.projectFileTreeRoot {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* nested child groups get the vertical gutter */
+.projectFileTreeChildren {
+  list-style: none;
+  margin: 2px 0 0 0;
+  padding: 0;
+  position: relative;
+  padding-left: var(--tree-indent); /* reserve space for the vertical line */
+}
+
+/* vertical line that spans the whole child <ul> */
+.projectFileTreeChildren::before {
+  content: "";
+  position: absolute;
+  left: calc(var(--tree-indent) / 2);
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  background: var(--tree-line);
+  pointer-events: none;
+}
+
+/* item (both files and folders) */
+.projectFileTreeItem {
+  position: relative;
+  padding: 1px 0;
+  padding-left: calc(var(--tree-indent) / 2); /* align with vertical line */
+  margin: 0;
+}
+
+/* BUTTON (shared for file + folder rows) */
+.projectFileTreeBtn {
+  display: flex;
+  align-items: center;
+  gap: var(--tree-gap);
+  width: 100%;
+  border: none;
+  background: transparent;
+  text-align: left;
+  cursor: pointer;
+  border-radius: 0;
+  color: inherit;
+  line-height: 1;
+  white-space: nowrap;
+  padding: 0 0;
+
+  padding: 4px 0;
+}
+
+/* hover / focus */
+.projectFileTreeBtn:hover,
+.projectFileTreeBtn:focus {
+  background: var(--active-line);
+  color: inherit;
+  outline: none;
+}
+.projectFileTreeBtn:focus {
+  outline: none;
+}
+
+/* icons */
+.projectFileTreeBtn svg {
+  width: var(--tree-icon-size);
+  height: var(--tree-icon-size);
+  flex: 0 0 var(--tree-icon-size);
+  opacity: 1;
+  stroke-width: 1.6;
+  color: inherit;
+}
+
+/* file rows — now identical to folder rows */
+.projectFileTreeItem.file .projectFileTreeBtn,
+.projectFileTreeItem.file .projectFileTreeBtn svg {
+  color: inherit;
+}
+
+/* folder active (expanded) — removed any blue hint */
+.projectFileTreeBtn[aria-expanded="true"] svg {
+  color: inherit;
+  opacity: 1;
+}
+
+/* name text styling */
+.projectFileTreeFileName,
+.projectFileTreeDirectoryName {
+  font-size: 0.875rem;
+  color: inherit;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* selected state — keep the bg, kill the color tweaks */
+.projectFileTreeBtn.is-selected,
+.projectFileTreeBtn.is-selected:hover {
+  background: rgba(78,168,222,0.12);
+  color: inherit;
+}

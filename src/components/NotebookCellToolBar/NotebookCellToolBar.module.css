@@ -1,0 +1,101 @@
+ /* Floating Cell Toolbar (FCT) — layout + controls */
+.fctWrapper { display: block; width: var(--cell-body-width); margin: 0.5rem 0; box-sizing: border-box; }
+
+.fctToolbar { display: flex; align-items: center; justify-content: space-between; gap: 0.5rem; padding: 0.125rem 0; background: transparent; border: none; border-radius: 0; box-shadow: none; }
+
+.fctLeftGroup,
+.fctRightGroup { display: flex; align-items: center; gap: 0.5rem; }
+
+/* compact button base for fct */
+.fctIconBtn,
+.fctBtn,
+.fctAiBtn,
+.fctAdvancedItem {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.08rem 0.4rem;
+  border-radius: 0.25rem;
+  border: none;
+  background: none;
+  cursor: pointer;
+  margin: 0;
+}
+.fctAiBtn { font-weight: 600; }
+.fctBtn, .fctAiBtn { font-size: 0.8125rem; }
+.fctAdvancedItem { font-size: 0.875rem; text-align: left; width: 100%; padding: 0.25rem 0.5rem; }
+
+.fctIconBtn { width: 1.6rem; height: 1.6rem; justify-content: center; padding: 0; border: 1px solid transparent; border-radius: 0.25rem; }
+.fctIconBtn:focus,
+.fctBtn:focus,
+.fctAiBtn:focus,
+.fctAdvancedItem:focus { outline: 2px solid rgba(99,102,241,0.14); outline-offset: 2px; }
+
+.fctLabel { line-height: 1; display: inline-block; }
+.fctAdvancedWrapper {
+  display: inline-block;
+  margin: 0;          /* remove any default margin */
+  padding: 0;         /* remove padding */
+}
+
+.fctAdvancedList { display: flex; flex-direction: column; gap: 0.25rem; padding: 0; margin: 0; list-style: none; }
+
+.fctAdvancedMenu {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+  padding: calc(var(--space-sm) + 2px);   /* same padding as helper */
+  border-radius: var(--radius-sm);       /* match helper radius */
+  background: var(--surface);             /* flat, solid surface */
+  border: 1px solid var(--border);        /* subtle thin border */
+  box-shadow: none;                       /* explicitly minimal */
+  box-sizing: border-box;
+  max-width: var(--helper-max-width);
+}
+
+/* items styled the same as helper buttons — no transforms, no shadow */
+.fctAdvancedMenu .fctAdvancedItem {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-sm);
+  padding: 8px 10px;
+  border-radius: var(--radius-md);
+  border: none;                           /* flat look like helper-btn */
+  background: transparent;
+  color: var(--text-secondary);
+  cursor: pointer;
+  font-size: 14px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transition: background 0.12s ease;      /* subtle only */
+}
+
+/* match helper hover/focus/active behavior exactly — minimal and instant */
+.fctAdvancedMenu .fctAdvancedItem:hover,
+.fctAdvancedMenu .fctAdvancedItem:focus {
+  background: var(--active-line);
+  color: var(--text-primary);
+  outline: none;
+}
+.fctAdvancedMenu .fctAdvancedItem:active {
+  background: rgba(13,36,66,0.03);
+}
+
+/* icons sizing consistent with helper */
+.fctAdvancedMenu .fctAdvancedItem svg {
+  width: var(--icon-small);
+  height: var(--icon-small);
+  opacity: 0.9;
+  stroke-width: 1.8;
+  flex: 0 0 auto;
+}
+
+/* portal variant: keep minimal as well (no popping shadow) */
+.fctAdvancedMenu_Portal {
+  margin-top: 0 !important;
+  max-width: 28rem;
+  box-shadow: none; /* explicit minimal */
+  background: var(--surface);
+  border: 1px solid var(--border);
+}

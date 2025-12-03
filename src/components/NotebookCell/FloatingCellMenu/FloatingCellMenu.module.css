@@ -1,0 +1,85 @@
+.menuWrapper {
+    /* your variables */
+    --menu-top-offset: 0;
+    --menu-gap: 8px;
+    --menu-padding: 8px;
+    --menu-border-radius: 6px;
+    --button-padding: 6px 10px;
+    --button-border-radius: 4px;
+    --button-font-size: 14px;
+
+    display: inline-block;
+    width: max-content;          /* fit children horizontally */
+    min-width: 200px;      /* prevent parent compression */
+    position: relative;
+    flex-shrink: 1;      /* allow the menu to shrink */
+    box-sizing: border-box;
+}
+
+.menu {
+    position: sticky;
+    top: var(--menu-top-offset);
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-md);
+    padding: calc(var(--space-sm) + 2px);
+    border-radius: var(--radius-sm);
+    background: var(--surface);              /* solid surface, not a gradient */
+    border: 1px solid var(--border);         /* subtle thin border */
+    box-shadow: none;                        /* no depth */
+    align-items: stretch;
+    box-sizing: border-box;
+    backdrop-filter: none;
+}
+
+.button {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-sm);
+    width: 100%;
+    padding: 6px 8px;
+    border-radius: var(--radius-sm);
+    border: none;
+    background: transparent;
+    color: var(--text-secondary);
+    font-size: 13px;
+    cursor: pointer;
+    box-shadow: none;
+    text-align: left;
+    justify-content: flex-start;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    transition: background 0.12s ease;
+}
+
+/* icons */
+.menu svg,
+.button svg {
+    width: var(--icon-small);
+    height: var(--icon-small);
+    opacity: 0.9;
+    stroke-width: 1.8;
+    flex: 0 0 auto;
+}
+
+.button.small svg {
+    width: 14px;
+    height: 14px;
+}
+
+/* hover/focus/active for helper — minimal and non-animated */
+.button:hover,
+.button:focus {
+    background: var(--active-line);
+    color: var(--text-primary);
+    outline: none;
+}
+
+.menu, .menuWrapper {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.menu { height: 0; overflow: hidden; }

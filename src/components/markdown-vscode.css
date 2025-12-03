@@ -1,0 +1,155 @@
+/* markdown-vscode.css
+   Visuals based on:
+   base background: #f8fafc
+   foreground: #0F1722
+   editor accents and selection approximated
+*/
+
+/* Container */
+.vscode-markdown {
+  background: #f8fafc;
+  color: #0F1722;
+  padding: 1rem;
+  border-radius: 8px;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI",
+               Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji",
+               "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  line-height: 1.5;
+  font-size: 15px;
+}
+
+/* GitHub-like markdown body base rules (optional if you already imported github-markdown-css) */
+.vscode-markdown h1 { font-size: 1.8rem; margin: .6rem 0; color: #0F1722; }
+.vscode-markdown h2 { font-size: 1.4rem; margin: .5rem 0; color: #0F1722; }
+.vscode-markdown h3 { font-size: 1.15rem; margin: .45rem 0; color: #0F1722; }
+.vscode-markdown p { margin: .5rem 0; }
+.vscode-markdown blockquote {
+  border-left: 3px solid #4EA8DE;
+  padding-left: 1rem;
+  margin: .5rem 0;
+  color: #374151;
+  background: rgba(78,168,222,0.04);
+  border-radius: 6px;
+}
+
+/* Tables */
+.vscode-markdown table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: .75rem 0;
+  background: transparent;
+}
+.vscode-markdown th,
+.vscode-markdown td {
+  border: 1px solid #E6EEF6;
+  padding: .5rem .75rem;
+  text-align: left;
+  vertical-align: top;
+}
+.vscode-markdown th {
+  background: rgba(78,168,222,0.06);
+  color: #0F1722;
+}
+
+/* Code blocks container */
+.vscode-markdown pre {
+  background: #ffffff;               /* slightly lighter than page for contrast */
+  border: 1px solid #E6EEF6;
+  padding: .75rem;
+  border-radius: 6px;
+  overflow: auto;
+  margin: .75rem 0;
+  box-shadow: none;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, "Roboto Mono", "Courier New", monospace;
+  font-size: 13px;
+  line-height: 1.45;
+}
+
+/* Inline code */
+.vscode-markdown code {
+  background: rgba(15,23,34,0.04);
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, "Roboto Mono", monospace;
+  font-size: 13px;
+}
+
+/* Make sure fenced code blocks use hljs styling */
+.vscode-markdown pre code.hljs,
+.vscode-markdown pre code {
+  display: block;
+  background: transparent;
+  color: inherit;
+  padding: 0;
+  border: 0;
+}
+
+/* Monaco-inspired editor colors & token mapping for highlight.js */
+
+/* Base hljs */
+.hljs {
+  background: transparent;  /* background controlled by <pre> above */
+  color: #0F1722;           /* editor.foreground */
+}
+
+/* Tokens mapped from the monaco theme you gave */
+.hljs-comment,
+.hljs-quote {
+  color: #69707D;           /* comment */
+  font-style: italic;
+}
+
+.hljs-keyword,
+.hljs-selector-tag,
+.hljs-meta,
+.hljs-doctag,
+.hljs-section,
+.hljs-built_in {
+  color: #2874A3;           /* keyword - bold */
+  font-weight: 700;
+}
+
+.hljs-string,
+.hljs-title,
+.hljs-name,
+.hljs-attr {
+  color: #1b6643;           /* string */
+}
+
+.hljs-number,
+.hljs-literal,
+.hljs-symbol {
+  color: #B45309;           /* number */
+}
+
+.hljs-type,
+.hljs-class .hljs-title,
+.hljs-built_in,
+.hljs-tag {
+  color: #7C3AED;           /* type */
+}
+
+.hljs-variable,
+.hljs-template-variable,
+.hljs-attribute {
+  color: #7C3AED;           /* variable (same as type, per request) */
+}
+
+/* function names */
+.hljs-function .hljs-title,
+.hljs-title.function_ {
+  color: #0B5EA6;           /* function */
+}
+
+/* subtle ruler/indent guide mimic */
+.vscode-markdown pre {
+  border-left: 2px solid transparent;
+}
+
+/* selection / highlight approximations (not exact because selection managed by browser) */
+.vscode-markdown ::selection {
+  background: rgba(78,168,222,0.18);
+}
+
+/* small responsive niceties */
+.vscode-markdown img { max-width: 100%; border-radius: 6px; }

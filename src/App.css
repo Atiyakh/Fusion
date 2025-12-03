@@ -1,0 +1,133 @@
+/* App.css */
+:root{
+  /* ---------- Colors & Surfaces ---------- */
+  --accent: #4EA8DE;
+  --accent-600: #3C94C9;
+  --accent-700: #2C80B3;
+  --bg: #F5FAFF;
+  --surface: #FFFFFF;
+  --muted-surface: #F3F7FB;
+  --border: #E6EEF6;
+
+  /* ---------- Shadows (kept for optional uses but not used for minimal menus) ---------- */
+  --shadow: 0 6px 18px rgba(13,36,66,0.06);
+  --shadow-sm: 0 4px 6px rgba(0,0,0,0.10);
+  --shadow-xs: 0 1px 3px rgba(0,0,0,0.08);
+  --helper-shadow: 0 4px 10px rgba(11,18,34,0.04);
+  --helper-hover-shadow: 0 10px 22px rgba(11,18,34,0.08);
+
+  /* ---------- Text ---------- */
+  --text-primary: #0F1722;
+  --text-secondary: #475569;
+  --placeholder: #94A3B8;
+  --muted: #6B7280;
+
+  /* ---------- Code Editor ---------- */
+  --code-bg: #FFFFFF;
+  --gutter-bg: #F3F7FB;
+  --line-number: #7B8794;
+  --caret: #0F1722;
+  --selection: rgba(78,168,222,0.18);
+  --active-line: rgba(78,168,222,0.06);
+  --code-text: #0F1722;
+  --comment: #6B7280;
+  --keyword: #2C80B3;
+  --function: #0B5EA6;
+  --variable: #1F2937;
+  --string: #0F5132;
+  --number: #B45309;
+  --type: #7C3AED;
+
+  /* ---------- Notebook Cell Defaults ---------- */
+  --notebook-cell-border-width: 2px;
+  --notebook-cell-border-color: transparent;
+  --notebook-cell-border-radius: 8px;
+  --cell-border-shorthand: var(--notebook-cell-border-width) solid var(--notebook-cell-border-color);
+
+  /* ---------- Layout & Spacing ---------- */
+  --cell-body-width: 800px;
+  --cell-max-wrapper: 100%;
+  --helper-gap: 10px;
+  --helper-vertical-offset: -10px;
+  --helper-max-width: 360px;
+
+  /* spacing scale */
+  --space-xs: 4px;
+  --space-sm: 6px;
+  --space-md: 8px;
+  --space-lg: 10px;
+  --space-xl: 18px;
+
+  /* radii & icon sizing */
+  --radius-sm: 6px;
+  --radius-md: 8px;
+  --radius-lg: 10px;
+  --icon-size: 18px;
+  --icon-small: 16px;
+
+  /* buttons & cards */
+  --btn-padding: 8px;
+  --btn-padding-sm: 6px;
+
+  /* mobile */
+  --mobile-edge-gap: 8px;
+
+  --tree-indent: 16px;
+  --tree-line: #d9e3ea;
+  --bg-2nd-tone: #F8F8F8;
+}
+* { box-sizing: border-box; }
+
+#root {
+  width: 100%;
+  margin: 0 auto;
+  text-align: left;
+}
+
+/* hide Codeium logo if present */
+svg[aria-label="Codeium Logo"] { display: none !important; }
+
+.notebook-workspace {
+  display: flex;
+  flex-direction: row;
+  height: calc(100vh - 24px);        /* lock that thing to the viewport, no funny business */
+  overflow: hidden;     /* viewport scrollbar? never heard of her */
+}
+
+.cell-area {
+  flex: 1 1 auto;     /* take up the leftover space */
+  min-height: 0;      /* CRITICAL: prevents flex from forcing infinite height */
+  overflow-y: auto;   /* scroll INSIDE here */
+  overflow-x: hidden; /* optional but makes things cleaner */
+  padding: 8px 8px 0 8px; /* optional: avoids scrollbar overlap */
+}
+
+.cell-area::-webkit-scrollbar {
+    width: 10px;
+}
+
+.cell-area::-webkit-scrollbar-track {
+    background: #f1f1f150;
+    border-left: 1px solid var(--border);
+}
+
+.cell-area::-webkit-scrollbar-thumb {
+    background: #8885;
+    transition: background 180ms cubic-bezier(.25, .1, .25, 1); /* smooth AF */
+}
+
+.cell-area::-webkit-scrollbar-thumb:hover {
+    background: #8887;
+}
+
+/* Darker when clicking/dragging */
+.cell-area::-webkit-scrollbar-thumb:active {
+    background: #5559;
+}
+
+.notebook-editor-area {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  width: 100%;
+}

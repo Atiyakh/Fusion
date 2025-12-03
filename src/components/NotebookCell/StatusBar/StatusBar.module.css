@@ -1,0 +1,8 @@
+.cellStatusBar {
+  border-bottom: var(--cell-border-shorthand);
+  border-left: var(--cell-border-shorthand);
+  border-right: var(--cell-border-shorthand);
+  border-radius: 0 0 var(--notebook-cell-border-radius) var(--notebook-cell-border-radius);
+  background-color: var(--surface);
+  padding: var(--space-sm) var(--space-lg);
+}

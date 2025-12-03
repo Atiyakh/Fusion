@@ -1,0 +1,29 @@
+.tabBar {
+    overflow-x: auto;
+    flex: 0 0 40px;
+    background-color: var(--bg-2nd-tone);
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    white-space: nowrap;
+    max-width: calc(100vw - 355px);
+    width: 100%;
+}
+
+.tabBar::-webkit-scrollbar-track {
+    background: #f1f1f150;
+    border-left: 1px solid var(--border);
+}
+
+.tabBar::-webkit-scrollbar-thumb {
+    background: #8885;
+    transition: background 180ms cubic-bezier(.25, .1, .25, 1);
+}
+
+.tabBar::-webkit-scrollbar-thumb:hover {
+    background: #8887;
+}
+
+/* Darker when clicking/dragging */
+.tabBar::-webkit-scrollbar-thumb:active {
+    background: #5559;
+}

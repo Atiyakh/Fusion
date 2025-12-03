@@ -1,0 +1,10 @@
+.notebookStatusBar {
+  width: 100%;
+  height: 24px;
+  background-color: var(--bg-2nd-tone);
+  border-top: 1px solid var(--border);
+  display: flex;
+  padding: 0 12px;
+  margin: 0;
+  box-sizing: border-box;
+}

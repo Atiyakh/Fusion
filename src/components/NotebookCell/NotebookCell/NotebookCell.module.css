@@ -1,0 +1,31 @@
+/* NotebookCell.module.css */
+:global(.notebook-cell) {
+  width: 100%;
+  background: var(--surface);
+  border-radius: var(--notebook-cell-border-radius);
+  box-shadow: var(--shadow-sm), var(--shadow-xs);
+  border: var(--cell-border-shorthand);
+  box-sizing: border-box;
+}
+
+.notebookCellWrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: 100%;
+  gap: 8px;
+  flex: 1 1 auto !important;
+  min-width: 0; /* crucial */
+}
+
+:global(.notebook-cell) {
+  border-color: var(--border);
+}
+
+.cellEditorWrapper {
+  width: 100%;
+  min-width: 0;
+  flex: 1 1 auto;
+  display: flex; /* not block */
+  flex-direction: column;
+}

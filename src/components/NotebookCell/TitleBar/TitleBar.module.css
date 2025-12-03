@@ -1,0 +1,55 @@
+.cellTitleBar {
+  border-top: var(--cell-border-shorthand);
+  border-left: var(--cell-border-shorthand);
+  border-right: var(--cell-border-shorthand);
+  border-radius: calc(var(--notebook-cell-border-radius) - 2px) calc(var(--notebook-cell-border-radius) - 2px) 0 0;
+  background-color: #F8F8F8;
+  padding-left: var(--space-lg);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: var(--space-md);
+  margin: 0;
+}
+
+.cellControlsContainer {
+  display: inline-flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: var(--space-md) !important;
+  padding: var(--space-sm) !important;
+  box-sizing: border-box !important;
+  width: fit-content !important;
+  max-width: max-content !important;
+  flex: 0 0 auto !important;
+  margin: 0 !important;
+  background: transparent !important;
+  flex-wrap: nowrap !important;
+}
+
+.inputCountDisplay {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  font-family: ui-monospace, "Cascadia Code", "Source Code Pro", Menlo, Consolas, monospace;
+}
+
+.cellTitleBar .copyButton,
+.collapseCellButton {
+  padding: var(--btn-padding);
+  border-radius: var(--radius-sm);
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 0;
+}
+
+.cellTitleText {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #555 !important;
+  margin-right: auto;
+}
