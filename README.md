@@ -51,15 +51,15 @@ It's a **modern data science workstation.**
 ## 🖥️ Screenshots
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Atiyakh/Fluxon/refs/heads/main/diagrams/school_models_example.png" alt="Example: School Models Diagram">
+  <img src="https://raw.githubusercontent.com/Atiyakh/Fusion/refs/heads/main/screenshots/Screenshot%202025-12-06%20075527.png">
 </p>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Atiyakh/Fluxon/refs/heads/main/diagrams/school_models_example.png" alt="Example: School Models Diagram">
+  <img src="https://raw.githubusercontent.com/Atiyakh/Fusion/refs/heads/main/screenshots/Screenshot%202025-12-05%20092113.png">
 </p>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Atiyakh/Fluxon/refs/heads/main/diagrams/school_models_example.png" alt="Example: School Models Diagram">
+  <img src="https://raw.githubusercontent.com/Atiyakh/Fusion/refs/heads/main/screenshots/Screenshot%202025-12-05%20092052.png">
 </p>
 
 - Notebook editor + tabs  
