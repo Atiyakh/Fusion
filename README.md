@@ -172,3 +172,6 @@ Fusion includes a built-in notebook VCS:
 - Node.js (>= 18)
 - Python (>= 3.9)
 - A local Python kernel environment
+
+### License
+licensed under the **MIT License**.
