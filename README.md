@@ -1,174 +1,174 @@
-# ⚠️ Project Under Active Development!
+# ⚡ Fusion (A Local-First Data Science IDE and Data Modeling Env)
 
-# Fusion - Python CLI + DevOps + Notebooks — Repository Skeleton
-
-This document contains a ready-to-copy repository skeleton (with actual working code) for a Python CLI application, DevOps automation, and Jupyter/IPython notebook versioning. The files below are consistent with the README quick start instructions.
+> A modern, open-source data science IDE that fuses runtime introspection, hybrid static/dynamic analysis, AI tooling, embedded notebook version control, and native database/cloud integrations while remaining 100% backward compatible with Jupyter notebooks.
 
 ---
 
-<div style="text-align: center;">
-  <img src="https://raw.githubusercontent.com/Atiyakh/Fusion/refs/heads/main/fusion_labtools/Screenshot%202025-09-18%20072429.png" alt="centered image" width=100%/>
-</div>
+## 🚀 Why Fusion?
+
+Jupyter notebooks power modern data science, but they were never designed for:
+
+- Real version control
+- Large projects with multiple branches
+- Database and cloud-native workflows
+- Fast, contextual AI tooling
+- Reliable object inspection and visualization
+- Professional developer ergonomics
+
+It's not just a better notebook.  
+It's a **modern data science workstation.**
 
 ---
 
-## File contents
+## ✨ Key Highlights
 
-### README.md
+- 🧠 **Hybrid static + dynamic inspection**  
+  Hover any DataFrame, model, array, or object to see real runtime stats, previews, and plots.
 
-````markdown
-# Python CLI + DevOps + Notebooks Skeleton
+- 🔎 **Interactive hover visualizations**  
+  Inline `df.head()`, `describe()`, `info()`, and small seaborn/plotly plots.
 
-Quick start:
+- 🤖 **AI-native workflows**  
+  Project-aware refactoring & explanation via Gemini CLI + unlimited Codeium completions.
 
-```bash
-python -m venv .venv
-source .venv/bin/activate
-pip install -r requirements.txt
-make install
-````
+- 🗄️ **Database UI cells**  
+  Browse schemas, ER diagrams, run SQL, and convert results to pandas (inside a cell).
 
-Run CLI:
+- ☁️ **S3 / object storage UI cells**  
+  Browse buckets, lazy-load large objects, and stream data directly into your kernel.
 
-```bash
-python -m cli_app --help
-```
+- 🕒 **Embedded notebook version control**  
+  Cell-level diffs, branching, and time travel powered by SQLite inside the notebook.
 
-Run tests:
+- 🧩 **100% Jupyter compatible**  
+  UI features are overlays. exported notebooks run in standard Jupyter.
 
-```bash
-make test
-```
+- ⚡ **Local-first & fast**  
+  React frontend, local kernel execution, no mandatory cloud dependency.
 
-Push to GitHub:
+---
 
-```bash
-./scripts/git_push.sh feature/initial origin
-```
+## 🖥️ Screenshots
 
-````
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Atiyakh/Fluxon/refs/heads/main/diagrams/school_models_example.png" alt="Example: School Models Diagram">
+</p>
 
-### src/cli_app/__init__.py
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Atiyakh/Fluxon/refs/heads/main/diagrams/school_models_example.png" alt="Example: School Models Diagram">
+</p>
 
-```python
-"""CLI App package."""
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Atiyakh/Fluxon/refs/heads/main/diagrams/school_models_example.png" alt="Example: School Models Diagram">
+</p>
 
-__version__ = "0.1.0"
-````
+- Notebook editor + tabs  
+- Hover inspector with plots  
+- Database UI cell  
+- S3 UI cell  
+- Version history / time travel UI  
 
-### src/cli\_app/cli.py
+---
 
-```python
-"""Simple CLI with Click — dummy commands."""
-import click
-from cli_app import __version__
+## 🏗️ Architecture Overview
 
-@click.group()
-def cli():
-    """Root CLI group."""
-    pass
+### Frontend
+- React-based UI
+- Local-first hosting
+- Modular plugin system for inspectors, connectors, and AI tools
 
-@cli.command()
-@click.option("--name", default="world", help="Name to greet")
-def hello(name):
-    """Print a greeting and a simple metric."""
-    click.echo(f"Hello, {name}!")
-    click.echo(f"name_length={len(name)}")
+### Kernel + Language Server
+- Pyright language server extended to query the live kernel
+- Hybrid static + runtime inspection for real object metadata
 
-@cli.command()
-def version():
-    """Print version info."""
-    click.echo(f"cli-app-dummy {__version__}")
+### AI Stack
+- **Gemini CLI** for project-level reasoning, refactors, and explanations
+- **Codeium** for unlimited, contextual code completions
 
-if __name__ == "__main__":
-    cli()
-```
+### Notebook Version Control
+- Embedded SQLite database stored in `.ipynb` metadata
+- Cell-level diff tracking
+- Branch-aware linear histories
+- Periodic compact checkpoints for fast reconstruction
+- Deterministic replay and time travel
 
-### tests/test\_cli.py
+### Data Connectors
+- Database UI cells (Postgres, MySQL, Snowflake, SQLite, etc.)
+- S3-compatible object storage UI cells (AWS, MinIO, etc.)
 
-```python
-from click.testing import CliRunner
-from cli_app.cli import cli
+---
 
+## 🔬 Hybrid Runtime Inspection (How It Works)
 
-def test_hello():
-    runner = CliRunner()
-    result = runner.invoke(cli, ["hello", "--name", "Alice"])
-    assert result.exit_code == 0
-    assert "Hello, Alice!" in result.output
-    assert "name_length=5" in result.output
+Fusion rewires Pyright to consult the live kernel for inspectable objects:
 
+On hover, the IDE can fetch:
+- `df.head()`
+- `df.describe()`
+- `df.info()`
+- shape, dtypes, memory usage
+- small inline plots (histograms, boxplots, etc.)
+- model metadata and parameters
 
-def test_version():
-    runner = CliRunner()
-    result = runner.invoke(cli, ["version"])
-    assert result.exit_code == 0
-    assert "cli-app-dummy" in result.output
-```
+This replaces static guessing with **real runtime truth.**
 
-### notebooks/example\_py.py
+---
 
-```python
-# ---
-# jupytext: {"formats": "ipynb,py:light", "text_representation": {"extension": ".py", "format_name": "light"}}
-# ---
+## 🗄️ Database UI Cells
 
-# # Example Notebook: Data exploration (dummy)
+Turn any cell into a full database workspace:
 
-import math
+- Connect to relational databases
+- Browse schemas and tables
+- View ER diagrams
+- Scroll table previews
+- Run SQL
+- Convert query results to pandas DataFrames
 
-values = [1, 2, 3, 5, 8]
-mean = sum(values) / len(values)
-print(f"mean={mean}")
+All UI actions generate real Python code underneath for full compatibility.
 
-# Example function
+---
 
-def fibonacci(n):
-    if n <= 1:
-        return n
-    return fibonacci(n - 1) + fibonacci(n - 2)
+## ☁️ S3 / Object Storage UI Cells
 
-print("fib(5)=", fibonacci(5))
-```
+Native UI for S3-compatible storage:
 
-### requirements.txt
+- Browse buckets and folders
+- Lazy-load large objects
+- Load small objects directly into RAM
+- Stream data into pandas
+- Track mounted/loaded objects
 
-```
-click==8.1.7
-pytest==7.4.0
-jupytext==1.14.0
-black==24.1.0
-isort==5.12.0
-flake8==6.1.0
-```
+Like a cloud file manager inside your notebook.
 
-### pyproject.toml
+---
 
-```toml
-[build-system]
-requires = ["setuptools>=61.0", "wheel"]
-build-backend = "setuptools.build_meta"
+## 🕒 Notebook Version Control (No Git Required)
 
-[project]
-name = "cli-app-dummy"
-version = "0.1.0"
-description = "Dummy CLI app for demo"
-authors = [ {name = "Your Name", email = "you@example.com"} ]
+Fusion includes a built-in notebook VCS:
 
-[tool.jupytext]
-formats = "ipynb,py:light"
+### Features
+- [experimental] Cell-level diffs (create, edit, delete, move, metadata)
+- Virtual branches
+- Time travel per cell or full notebook
+- Deterministic snapshot reconstruction
+- SQLite-backed history stored inside the notebook
 
-[tool.black]
-line-length = 88
-```
+### How It Works (High Level)
+- Every atomic notebook action is logged as a diff entry
+- Diffs are grouped by `branch_id`
+- Periodic checkpoints store compact snapshots of cell order + code
+- Snapshot reconstruction = nearest checkpoint + replay remaining diffs
 
-### .gitignore
+### Why This Matters
+- No JSON merge conflicts
+- No broken notebooks
+- No external Git required
+- Full portability: notebook + history in one file
 
-```gitignore
-__pycache__/
-.env
-.venv/
-.ipynb_checkpoints/
-*.pyc
-.DS_Store
-```
+---
+
+### Prerequisites
+- Node.js (>= 18)
+- Python (>= 3.9)
+- A local Python kernel environment
